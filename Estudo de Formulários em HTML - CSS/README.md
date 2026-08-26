@@ -63,3 +63,16 @@ estudo-formularios-html/
 │       └── Formularios HTML.jpg
 │
 └── README.md
+
+
+---
+
+## 👨‍💻 Autor
+
+**Gilvam J. T. de Oliveira**
+
+Projeto desenvolvido para fins de estudo e prática de **HTML5 e CSS3**.
+
+---
+
+⭐ Este projeto representa mais uma etapa da minha evolução no desenvolvimento web.
