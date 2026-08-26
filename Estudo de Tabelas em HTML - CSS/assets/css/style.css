@@ -1,0 +1,183 @@
+/* ==================================================
+   1. CONFIGURAÇÕES GERAIS
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   2. CABEÇALHO
+================================================== */
+
+.cabecalho {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+   3. CONTEÚDO
+================================================== */
+
+.conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* ==================================================
+   4. SEÇÕES
+================================================== */
+
+.secao {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.secao h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   5. CÓDIGO INLINE
+================================================== */
+
+code {
+    background-color: #e5e7eb;
+    color: #b91c1c;
+
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+
+/* ==================================================
+   6. TABELAS
+================================================== */
+
+table {
+    width: 100%;
+
+    /*
+       Faz as bordas das células
+       ficarem unificadas.
+    */
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+
+/* ==================================================
+   7. CAPTION
+================================================== */
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+   8. CABEÇALHOS
+================================================== */
+
+th {
+    background-color: #2563eb;
+    color: white;
+
+    font-weight: bold;
+    text-align: center;
+
+    padding: 12px;
+
+    border: 1px solid #1d4ed8;
+}
+
+
+/* ==================================================
+   9. CÉLULAS
+================================================== */
+
+td {
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   10. EFEITO NAS LINHAS
+================================================== */
+
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+
+/* ==================================================
+   11. EFEITO AO PASSAR O MOUSE
+================================================== */
+
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+
+/* ==================================================
+   12. TABELA COMPLETA
+================================================== */
+
+.tabela-completa th {
+    background-color: #166534;
+    border: 1px solid #d1d5db;
+}
+
+.tabela-completa tbody tr:hover {
+    background-color: #dcfce7;
+}
+
+
+/* ==================================================
+   13. RODAPÉ
+================================================== */
+
+.rodape {
+    background-color: #1f2937;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}

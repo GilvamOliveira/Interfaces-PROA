@@ -1,0 +1,269 @@
+/* ==================================================
+   1. CONFIGURAÇÕES GERAIS
+================================================== */
+
+/*
+   O seletor * seleciona todos os elementos da página.
+   Aqui estamos removendo as margens e espaçamentos
+   padrão do navegador.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+   Estilos gerais do corpo da página.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+
+    /*
+       Espaçamento interno da página.
+    */
+    padding: 30px;
+}
+
+
+/* ==================================================
+   2. TÍTULO PRINCIPAL
+================================================== */
+
+h1 {
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================
+   3. TÍTULOS DAS SEÇÕES
+================================================== */
+
+h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+
+    /*
+       Espaçamento entre o título e o conteúdo.
+    */
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+
+h3 {
+    color: #374151;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+   4. PARÁGRAFOS
+================================================== */
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   5. LISTAS NÃO ORDENADAS
+================================================== */
+
+/*
+   Espaçamento para que os marcadores das listas
+   não fiquem colados no conteúdo.
+*/
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+/*
+   Espaçamento entre os itens.
+*/
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* ==================================================
+   6. LISTAS ORDENADAS
+================================================== */
+
+ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+ol li {
+    margin-bottom: 5px;
+}
+
+
+/* ==================================================
+   7. LISTA DE DEFINIÇÃO
+================================================== */
+
+dl {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*
+   dt representa o termo que será definido.
+*/
+
+dt {
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/*
+   dd representa a descrição do termo.
+*/
+
+dd {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   8. DIV
+================================================== */
+
+/*
+   A div foi utilizada no HTML para agrupar
+   alguns parágrafos.
+
+   Aqui estamos visualizando esse agrupamento
+   através de uma borda e de um fundo.
+*/
+
+div {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   9. ID - PARÁGRAFO DESTAQUE
+================================================== */
+
+/*
+   O # significa que estamos selecionando um ID.
+
+   No HTML:
+   id="paragrafo-destaque"
+*/
+
+#paragrafo-destaque {
+    color: #ffffff;
+    background-color: #2563eb;
+
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+/* ==================================================
+   10. ID - PARÁGRAFO INFORMAÇÃO
+================================================== */
+
+/*
+   Outro exemplo de utilização de ID.
+*/
+
+#paragrafo-informacao {
+    color: #374151;
+    background-color: #e5e7eb;
+
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+}
+
+
+/* ==================================================
+   11. SPAN
+================================================== */
+
+/*
+   O span permite alterar apenas uma parte
+   do conteúdo de um elemento.
+
+   No HTML:
+   id="palavra-destaque"
+*/
+
+#palavra-destaque {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   12. CLASS
+================================================== */
+
+/*
+   O ponto (.) indica que estamos selecionando
+   uma CLASS.
+
+   No HTML:
+   class="texto-exemplo"
+
+   A mesma classe pode ser utilizada em vários
+   elementos.
+*/
+
+.texto-exemplo {
+    color: #166534;
+    background-color: #dcfce7;
+
+    padding: 12px;
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+   13. STRONG
+================================================== */
+
+/*
+   O <strong> já possui destaque por padrão,
+   mas podemos personalizar sua aparência.
+*/
+
+strong {
+    color: #111827;
+}

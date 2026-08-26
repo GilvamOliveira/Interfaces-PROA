@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Estudo de tabelas em HTML">
+    <meta name="keywords" content="HTML, tabelas, table, tr, th, td">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Listas e Tabelas HTML.jpg">
+    
+    <title>Estudo de Tabelas - HTML</title>
+</head>
+
+<body>
+
+    <!-- ==================================================
+         CABEÇALHO
+    =================================================== -->
+
+    <header class="cabecalho">
+
+        <h1>Estudo de Tabelas em HTML</h1>
+
+        <p>
+            Praticando a criação e organização de tabelas
+            utilizando HTML e CSS.
+        </p>
+
+    </header>
+
+
+    <main class="conteudo">
+
+
+        <!-- ==================================================
+             1. TABELA BÁSICA
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>1. Tabela Básica</h2>
+
+            <p>
+                Uma tabela HTML utiliza a tag
+                <code>&lt;table&gt;</code>.
+            </p>
+
+            <p>
+                As linhas são criadas com
+                <code>&lt;tr&gt;</code> e as células
+                com <code>&lt;td&gt;</code>.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Estrutura</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Estilo</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Interatividade</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             2. TABLE ROW - TR
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>2. Linhas da Tabela - &lt;tr&gt;</h2>
+
+            <p>
+                A tag <code>&lt;tr&gt;</code> representa
+                uma linha da tabela.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <td>Primeira linha</td>
+                    <td>Coluna 2</td>
+                </tr>
+
+                <tr>
+                    <td>Segunda linha</td>
+                    <td>Coluna 2</td>
+                </tr>
+
+                <tr>
+                    <td>Terceira linha</td>
+                    <td>Coluna 2</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             3. TABLE DATA - TD
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>3. Células - &lt;td&gt;</h2>
+
+            <p>
+                A tag <code>&lt;td&gt;</code> representa
+                uma célula de dados da tabela.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <td>Gilvam</td>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                </tr>
+
+                <tr>
+                    <td>Larissa</td>
+                    <td>Java</td>
+                    <td>Iniciante</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             4. TABLE HEADER - TH
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>4. Cabeçalho da Tabela - &lt;th&gt;</h2>
+
+            <p>
+                A tag <code>&lt;th&gt;</code> representa
+                uma célula de cabeçalho.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <th>Aluno</th>
+                    <th>Curso</th>
+                    <th>Nível</th>
+                </tr>
+
+                <tr>
+                    <td>Gilvam</td>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                </tr>
+
+                <tr>
+                    <td>Larissa</td>
+                    <td>Java</td>
+                    <td>Iniciante</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             5. CAPTION
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>5. Título da Tabela - &lt;caption&gt;</h2>
+
+            <p>
+                A tag <code>&lt;caption&gt;</code> adiciona
+                um título ou descrição para a tabela.
+            </p>
+
+
+            <table>
+
+                <caption>
+                    Notas dos alunos
+                </caption>
+
+                <tr>
+                    <th>Aluno</th>
+                    <th>HTML</th>
+                    <th>JAVA</th>
+                </tr>
+
+                <tr>
+                    <td>Gilvam</td>
+                    <td>9,0</td>
+                    <td>8,5</td>
+                </tr>
+
+                <tr>
+                    <td>Larissa</td>
+                    <td>8,5</td>
+                    <td>9,0</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             6. THEAD, TBODY E TFOOT
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>6. Estrutura da Tabela</h2>
+
+            <p>
+                Podemos organizar uma tabela utilizando
+                <code>&lt;thead&gt;</code>,
+                <code>&lt;tbody&gt;</code> e
+                <code>&lt;tfoot&gt;</code>.
+            </p>
+
+
+            <table>
+
+                <caption>
+                    Desempenho da turma
+                </caption>
+
+
+                <!-- Cabeçalho -->
+
+                <thead>
+
+                    <tr>
+                        <th>Aluno</th>
+                        <th>HTML</th>
+                        <th>JAVA</th>
+                    </tr>
+
+                </thead>
+
+
+                <!-- Corpo -->
+
+                <tbody>
+
+                    <tr>
+                        <td>Gilvam</td>
+                        <td>9,0</td>
+                        <td>8,5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Larissa</td>
+                        <td>8,5</td>
+                        <td>9,0</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miah</td>
+                        <td>7,5</td>
+                        <td>8,0</td>
+                    </tr>
+
+                </tbody>
+
+
+                <!-- Rodapé -->
+
+                <tfoot>
+
+                    <tr>
+                        <th>Média</th>
+                        <td>8,3</td>
+                        <td>8,5</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             7. COLSPAN
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>7. Mesclando Colunas - colspan</h2>
+
+            <p>
+                O atributo <code>colspan</code> permite
+                que uma célula ocupe mais de uma coluna.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <th colspan="2">
+                        Nome
+                    </th>
+
+                    <th>Contato</th>
+                </tr>
+
+                <tr>
+                    <td>Gilvam</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
+                </tr>
+
+                <tr>
+                    <td>Gilvam Oliveira</td>
+                    <td>gilvam@email.com</td>
+                    <td>(11) 99999-9999</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             8. ROWSPAN
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>8. Mesclando Linhas - rowspan</h2>
+
+            <p>
+                O atributo <code>rowspan</code> permite
+                que uma célula ocupe mais de uma linha.
+            </p>
+
+
+            <table>
+
+                <tr>
+                    <th>Curso</th>
+                    <th>Aluno</th>
+                    <th>Nível</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">
+                        HTML e JAVA
+                    </td>
+
+                    <td>Gilvam</td>
+                    <td>Iniciante</td>
+                </tr>
+
+                <tr>
+                    <td>Larissa</td>
+                    <td>Iniciante</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================================================
+             9. TABELA COMPLETA
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>9. Exemplo Completo</h2>
+
+            <p>
+                Neste exemplo foram combinados vários
+                conceitos estudados anteriormente.
+            </p>
+
+
+            <table class="tabela-completa">
+
+                <caption>
+                    Controle de Estudos
+                </caption>
+
+
+                <thead>
+
+                    <tr>
+                        <th>Aluno</th>
+                        <th>HTML</th>
+                        <th>JAVA</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Gilvam</td>
+                        <td>9,0</td>
+                        <td>8,5</td>
+                        <td>Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>Larissa</td>
+                        <td>8,5</td>
+                        <td>9,0</td>
+                        <td>Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miah</td>
+                        <td>7,0</td>
+                        <td>7,5</td>
+                        <td>Aprovado</td>
+                    </tr>
+
+                </tbody>
+
+
+                <tfoot>
+
+                    <tr>
+                        <th colspan="3">
+                            Resultado da turma
+                        </th>
+
+                        <th>
+                            Aprovada
+                        </th>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+
+    <footer class="rodape">
+
+        <p>
+            Projeto desenvolvido para estudos de HTML e CSS.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

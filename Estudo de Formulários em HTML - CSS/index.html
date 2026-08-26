@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- CONFIGURAÇÕES BÁSICAS DA PÁGINA -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- INFORMAÇÕES SOBRE A PÁGINA -->
+
+    <meta name="description" content="Estudo completo de formulários em HTML">
+
+    <meta name="keywords" content="HTML, Forms, Formulários, Input, Select, Textarea">
+
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+
+    <!-- ARQUIVO CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!-- ÍCONE DA PÁGINA -->
+
+    <link rel="icon" type="image/x-icon" href="assets/img/Formularios HTML.jpg">
+
+
+    <title>Estudo de Formulários - HTML</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         CABEÇALHO
+    =================================================== -->
+
+    <header class="cabecalho">
+
+        <h1>Estudo de Formulários em HTML</h1>
+
+        <p>
+            Praticando formulários, elementos, tipos de input
+            e atributos utilizando HTML e CSS.
+        </p>
+
+    </header>
+
+
+    <main class="conteudo">
+
+
+        <!-- ==================================================
+             1. HTML FORMS
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>1. HTML Forms</h2>
+
+            <p>
+                O elemento
+                <code>&lt;form&gt;</code>
+                é utilizado para criar um formulário.
+            </p>
+
+            <p>
+                Dentro dele podemos adicionar diferentes
+                elementos para receber informações do usuário.
+            </p>
+
+
+            <form>
+
+                <label for="nome-basico">
+                    Nome:
+                </label>
+
+                <input type="text" id="nome-basico" name="nome">
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================================================
+             2. FORM ATTRIBUTES
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>2. Atributos do Formulário</h2>
+
+            <p>
+                Os atributos do elemento
+                <code>&lt;form&gt;</code>
+                permitem definir diferentes comportamentos
+                para o formulário.
+            </p>
+
+
+            <!--
+                action:
+                Define para onde os dados serão enviados.
+            -->
+
+            <form action="/processar-formulario">
+
+                <label for="usuario">
+                    Usuário:
+                </label>
+
+                <input type="text" id="usuario" name="usuario">
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+
+            <div class="explicacao">
+
+                <strong>action:</strong>
+
+                Define o endereço que receberá
+                os dados enviados pelo formulário.
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             3. FORM ELEMENTS
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>3. Elementos de Formulário</h2>
+
+            <p>
+                Um formulário pode utilizar diferentes
+                elementos para receber informações.
+            </p>
+
+
+            <!-- INPUT -->
+
+            <h3>Input</h3>
+
+            <label for="nome">
+                Nome:
+            </label>
+
+            <input type="text" id="nome" name="nome">
+
+
+            <!-- SELECT -->
+
+            <h3>Select</h3>
+
+            <label for="linguagem">
+                Linguagem favorita:
+            </label>
+
+            <select id="linguagem" name="linguagem">
+
+                <option value="html">
+                    HTML
+                </option>
+
+                <option value="css">
+                    CSS
+                </option>
+
+                <option value="java">
+                    Java
+                </option>
+
+            </select>
+
+
+            <!-- TEXTAREA -->
+
+            <h3>Textarea</h3>
+
+            <label for="mensagem">
+                Mensagem:
+            </label>
+
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+
+
+            <!-- BUTTON -->
+
+            <h3>Button</h3>
+
+            <button type="button">
+                Clique aqui
+            </button>
+
+        </section>
+
+
+        <!-- ==================================================
+             4. INPUT TYPES
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>4. Tipos de Input</h2>
+
+            <p>
+                O elemento
+                <code>&lt;input&gt;</code>
+                possui diferentes tipos para representar
+                diferentes formas de entrada.
+            </p>
+
+
+            <!-- TEXT -->
+
+            <div class="campo">
+
+                <label for="input-text">
+                    Text:
+                </label>
+
+                <input type="text" id="input-text" name="text">
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="campo">
+
+                <label for="input-password">
+                    Password:
+                </label>
+
+                <input type="password" id="input-password" name="password">
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="campo">
+
+                <label for="input-email">
+                    Email:
+                </label>
+
+                <input type="email" id="input-email" name="email">
+
+            </div>
+
+
+            <!-- NUMBER -->
+
+            <div class="campo">
+
+                <label for="input-number">
+                    Número:
+                </label>
+
+                <input type="number" id="input-number" name="number">
+
+            </div>
+
+
+            <!-- DATE -->
+
+            <div class="campo">
+
+                <label for="input-date">
+                    Data:
+                </label>
+
+                <input type="date" id="input-date" name="date">
+
+            </div>
+
+
+            <!-- TIME -->
+
+            <div class="campo">
+
+                <label for="input-time">
+                    Horário:
+                </label>
+
+                <input type="time" id="input-time" name="time">
+
+            </div>
+
+
+            <!-- COLOR -->
+
+            <div class="campo">
+
+                <label for="input-color">
+                    Cor:
+                </label>
+
+                <input type="color" id="input-color" name="color">
+
+            </div>
+
+
+            <!-- FILE -->
+
+            <div class="campo">
+
+                <label for="input-file">
+                    Arquivo:
+                </label>
+
+                <input type="file" id="input-file" name="file">
+
+            </div>
+
+
+            <!-- CHECKBOX -->
+
+            <div class="campo">
+
+                <p>
+                    Checkbox:
+                </p>
+
+                <input type="checkbox" id="input-html" name="tecnologia" value="HTML">
+
+                <label for="input-html">
+                    HTML
+                </label>
+
+
+                <input type="checkbox" id="input-css" name="tecnologia" value="CSS">
+
+                <label for="input-css">
+                    CSS
+                </label>
+
+            </div>
+
+
+            <!-- RADIO -->
+
+            <div class="campo">
+
+                <p>
+                    Radio:
+                </p>
+
+                <input type="radio" id="nivel-iniciante" name="nivel" value="iniciante">
+
+                <label for="nivel-iniciante">
+                    Iniciante
+                </label>
+
+
+                <input type="radio" id="nivel-intermediario" name="nivel" value="intermediario">
+
+                <label for="nivel-intermediario">
+                    Intermediário
+                </label>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <div class="campo">
+
+                <input type="submit" value="Enviar">
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             5. INPUT ATTRIBUTES
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>5. Atributos do Input</h2>
+
+            <p>
+                Os atributos do
+                <code>&lt;input&gt;</code>
+                permitem controlar características
+                e comportamentos dos campos.
+            </p>
+
+
+            <!-- VALUE -->
+
+            <h3>value</h3>
+
+            <input type="text" value="Valor inicial">
+
+
+            <!-- PLACEHOLDER -->
+
+            <h3>placeholder</h3>
+
+            <input type="text" placeholder="Digite seu nome">
+
+
+            <!-- REQUIRED -->
+
+            <h3>required</h3>
+
+            <input type="text" placeholder="Campo obrigatório" required>
+
+
+            <!-- DISABLED -->
+
+            <h3>disabled</h3>
+
+            <input type="text" value="Campo desabilitado" disabled>
+
+
+            <!-- READONLY -->
+
+            <h3>readonly</h3>
+
+            <input type="text" value="Campo somente leitura" readonly>
+
+
+            <!-- MIN / MAX -->
+
+            <h3>min e max</h3>
+
+            <input type="number" min="1" max="100">
+
+
+            <!-- MAXLENGTH -->
+
+            <h3>maxlength</h3>
+
+            <input type="text" maxlength="10" placeholder="Máximo 10 caracteres">
+
+
+            <!-- SIZE -->
+
+            <h3>size</h3>
+
+            <input type="text" size="30">
+
+        </section>
+
+
+        <!-- ==================================================
+             6. FORM ATTRIBUTES
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>6. Atributos do Formulário</h2>
+
+            <p>
+                O elemento
+                <code>&lt;form&gt;</code>
+                possui atributos que controlam a forma como
+                os dados serão enviados.
+            </p>
+
+
+            <!-- ACTION -->
+
+            <h3>action</h3>
+
+            <form action="/processar">
+
+                <input type="text" name="nome" placeholder="Nome">
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+
+            <!-- METHOD -->
+
+            <h3>method</h3>
+
+            <form action="/processar" method="get">
+
+                <input type="text" name="pesquisa" placeholder="Pesquisar">
+
+                <input type="submit" value="Pesquisar">
+
+            </form>
+
+
+            <!-- AUTOCOMPLETE -->
+
+            <h3>autocomplete</h3>
+
+            <form autocomplete="on">
+
+                <input type="text" name="nome" placeholder="Nome">
+
+            </form>
+
+
+            <!-- NOVALIDATE -->
+
+            <h3>novalidate</h3>
+
+            <form action="/processar" novalidate>
+
+                <input type="email" name="email" placeholder="E-mail">
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================================================
+             7. FORMULÁRIO COMPLETO
+        =================================================== -->
+
+        <section class="secao">
+
+            <h2>7. Exemplo Completo</h2>
+
+            <p>
+                Neste exemplo foram combinados os principais
+                conceitos estudados sobre formulários.
+            </p>
+
+
+            <form class="formulario-completo" action="/processar-formulario" method="post" autocomplete="on">
+
+
+                <!-- NOME -->
+
+                <div class="campo">
+
+                    <label for="nome-final">
+                        Nome completo:
+                    </label>
+
+                    <input type="text" id="nome-final" name="nome" placeholder="Digite seu nome" required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="campo">
+
+                    <label for="email-final">
+                        E-mail:
+                    </label>
+
+                    <input type="email" id="email-final" name="email" placeholder="exemplo@email.com" required>
+
+                </div>
+
+
+                <!-- SENHA -->
+
+                <div class="campo">
+
+                    <label for="senha-final">
+                        Senha:
+                    </label>
+
+                    <input type="password" id="senha-final" name="senha" required>
+
+                </div>
+
+
+                <!-- DATA -->
+
+                <div class="campo">
+
+                    <label for="data-final">
+                        Data de nascimento:
+                    </label>
+
+                    <input type="date" id="data-final" name="data-nascimento">
+
+                </div>
+
+
+                <!-- CURSO -->
+
+                <div class="campo">
+
+                    <label for="curso-final">
+                        Curso:
+                    </label>
+
+                    <select id="curso-final" name="curso">
+
+                        <option value="html">
+                            HTML
+                        </option>
+
+                        <option value="css">
+                            CSS
+                        </option>
+
+                        <option value="java">
+                            Java
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- NÍVEL -->
+
+                <div class="campo">
+
+                    <p>
+                        Nível de conhecimento:
+                    </p>
+
+
+                    <input type="radio" id="iniciante-final" name="nivel" value="iniciante">
+
+                    <label for="iniciante-final">
+                        Iniciante
+                    </label>
+
+
+                    <input type="radio" id="intermediario-final" name="nivel" value="intermediario">
+
+                    <label for="intermediario-final">
+                        Intermediário
+                    </label>
+
+
+                    <input type="radio" id="avancado-final" name="nivel" value="avancado">
+
+                    <label for="avancado-final">
+                        Avançado
+                    </label>
+
+                </div>
+
+
+                <!-- TECNOLOGIAS -->
+
+                <div class="campo">
+
+                    <p>
+                        Tecnologias conhecidas:
+                    </p>
+
+
+                    <input type="checkbox" id="html-final" name="tecnologias" value="HTML">
+
+                    <label for="html-final">
+                        HTML
+                    </label>
+
+
+                    <input type="checkbox" id="css-final" name="tecnologias" value="CSS">
+
+                    <label for="css-final">
+                        CSS
+                    </label>
+
+
+                    <input type="checkbox" id="java-final" name="tecnologias" value="Java">
+
+                    <label for="java-final">
+                        Java
+                    </label>
+
+                </div>
+
+
+                <!-- MENSAGEM -->
+
+                <div class="campo">
+
+                    <label for="mensagem-final">
+                        Sobre você:
+                    </label>
+
+                    <textarea id="mensagem-final" name="mensagem" rows="5"
+                        placeholder="Conte um pouco sobre seus estudos..."></textarea>
+
+                </div>
+
+
+                <!-- ARQUIVO -->
+
+                <div class="campo">
+
+                    <label for="arquivo-final">
+                        Enviar arquivo:
+                    </label>
+
+                    <input type="file" id="arquivo-final" name="arquivo">
+
+                </div>
+
+
+                <!-- ENVIO -->
+
+                <input type="submit" value="Enviar formulário">
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ==================================================
+         RODAPÉ
+    =================================================== -->
+
+    <footer class="rodape">
+
+        <p>
+            Projeto desenvolvido para estudos de HTML e CSS.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
