@@ -1,0 +1,458 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   CONFIGURAÇÕES GERAIS
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #f2f5f8;
+
+    color: #222;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ==================================================
+   CABEÇALHO
+================================================== */
+
+.cabecalho {
+    background: linear-gradient(135deg,
+            #071952,
+            #088395);
+
+    color: white;
+
+    text-align: center;
+
+    padding-bottom: 40px;
+}
+
+
+.cabecalho__conteudo {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 50px 20px 30px;
+}
+
+
+.cabecalho h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.cabecalho p {
+    width: 100%;
+
+    color: #e5e7eb;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   IMAGEM DO CABEÇALHO
+================================================== */
+
+.cabecalho__imagem {
+    width: 700px;
+
+    max-width: 90%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==================================================
+   CONTEÚDO
+================================================== */
+
+.conteudo {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+
+/* ==================================================
+   INTRODUÇÃO
+================================================== */
+
+.introducao {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.introducao h2 {
+    color: #071952;
+
+    margin-bottom: 20px;
+}
+
+
+.introducao p {
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   CIDADES
+================================================== */
+
+.cidade {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.cidade:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==================================================
+   CABEÇALHO DA CIDADE
+================================================== */
+
+.cidade__cabecalho {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.cidade__posicao {
+    display: inline-block;
+
+    background-color: #088395;
+
+    color: white;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.cidade h2 {
+    color: #071952;
+
+    font-size: 32px;
+}
+
+
+/* ==================================================
+   FIGURE
+================================================== */
+
+figure {
+    margin: 0 0 25px;
+}
+
+
+figure img {
+    display: block;
+
+    width: 600px;
+
+    max-width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+
+figure img:hover {
+    transform: scale(1.02);
+}
+
+
+figcaption {
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   PARÁGRAFOS
+================================================== */
+
+.cidade p {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 15px auto;
+
+    color: #444;
+
+    font-size: 17px;
+
+    text-align: justify;
+}
+
+
+/* ==================================================
+   LINKS
+================================================== */
+
+a {
+    color: #088395;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+a:hover {
+    color: #071952;
+
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   ELEMENTOS SEMÂNTICOS
+================================================== */
+
+abbr {
+    cursor: help;
+}
+
+
+cite {
+    font-style: italic;
+}
+
+
+q {
+    font-style: italic;
+}
+
+
+strong {
+    color: #071952;
+}
+
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+.rodape {
+    background-color: #071952;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+
+.rodape a {
+    color: #7dd3fc;
+}
+
+
+.rodape small {
+    color: #d1d5db;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+
+    .cabecalho p {
+        font-size: 16px;
+    }
+
+
+    .cabecalho__imagem {
+        height: 280px;
+    }
+
+
+    .cidade {
+        padding: 20px;
+    }
+
+
+    .cidade h2 {
+        font-size: 27px;
+    }
+
+
+    figure img {
+        height: 280px;
+    }
+
+
+    .cidade p {
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* Celulares */
+
+@media (max-width: 480px) {
+
+    .cabecalho__conteudo {
+        padding: 35px 15px 25px;
+    }
+
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+
+    .cabecalho p {
+        font-size: 15px;
+    }
+
+
+    .cabecalho__imagem {
+        height: 220px;
+
+        border-radius: 12px;
+    }
+
+
+    .conteudo {
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+
+    .introducao,
+    .cidade {
+        padding: 18px;
+    }
+
+
+    .cidade h2 {
+        font-size: 23px;
+    }
+
+
+    figure img {
+        height: 210px;
+
+        border-radius: 10px;
+    }
+
+
+    .cidade p {
+        font-size: 15px;
+
+        text-align: left;
+    }
+
+
+    .rodape {
+        font-size: 14px;
+    }
+
+}
