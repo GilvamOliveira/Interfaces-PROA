@@ -109,9 +109,9 @@ Interfaces-PROA/
 
 ## 👨‍💻 Autor
 
-**Gilvam J. T. de Oliveira**
+*Gilvam J. T. de Oliveira*
 
-Projeto desenvolvido para fins de estudo e prática de **HTML5 e CSS3**.
+Projeto desenvolvido para fins de estudo e prática de *HTML5 e CSS3*.
 
 ---
 
