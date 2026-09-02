@@ -103,7 +103,7 @@ Interfaces-PROA/
     ├── projeto-02/
     │
     └── ...
-
+```
 
 ---
 
@@ -111,7 +111,7 @@ Interfaces-PROA/
 
 **Gilvam J. T. de Oliveira**
 
-Projeto desenvolvido para fins de estudo e prática de __HTML5 e CSS3__.
+Projeto desenvolvido para fins de estudo e prática de **HTML5 e CSS3**.
 
 ---
 
