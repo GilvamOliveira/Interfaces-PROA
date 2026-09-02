@@ -76,7 +76,7 @@ Durante o desenvolvimento, foram praticados:
 │       └── pindamonhangaba.jpg
 │
 └── README.md
-
+```
 
 ---
 
